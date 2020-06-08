@@ -4,8 +4,9 @@ Fueron creadas 4 apis
 * Section
 * Post
 * News
-
 Cuya relación genera un Json nested
+## Demo
+* [reto2](https://reto2-kinanalytics.herokuapp.com/explorer) - Demo Live
 
 ### Ejemplo Get
 
@@ -33,7 +34,5 @@ Response Body
 * Swagger
 * Heroku
 * Mongodb / mlab
-## Demo
-* [reto2](https://reto2-kinanalytics.herokuapp.com/explorer)
-) - Demo Live
+
 
