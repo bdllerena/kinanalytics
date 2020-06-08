@@ -1,0 +1,7 @@
+{
+  "mongodb": {
+    "url": "mongodb://kinanalytics:K1n1234@ds233288.mlab.com:33288/reto2",
+    "name": "mongodb",
+    "connector": "loopback-connector-mongodb"
+  }
+}

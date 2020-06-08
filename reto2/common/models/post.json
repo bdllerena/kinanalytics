@@ -1,0 +1,28 @@
+{
+  "name": "post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "paragraph": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "section": {
+      "type": "belongsTo",
+      "model": "section",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

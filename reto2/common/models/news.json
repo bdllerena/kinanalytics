@@ -1,0 +1,36 @@
+{
+  "name": "news",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "page": {
+      "type": "belongsTo",
+      "model": "page",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

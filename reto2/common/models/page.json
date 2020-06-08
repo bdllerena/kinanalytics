@@ -1,0 +1,44 @@
+{
+  "name": "page",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "route-page": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sections": {
+      "type": "hasMany",
+      "model": "section",
+      "foreignKey": ""
+    },
+    "news": {
+      "type": "hasMany",
+      "model": "news",
+      "foreignKey": ""
+    },
+    "posts": {
+      "type": "hasMany",
+      "model": "post",
+      "foreignKey": "",
+      "through": "sections"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
