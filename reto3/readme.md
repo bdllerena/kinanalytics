@@ -11,3 +11,4 @@ FROM `team_roster`
 GROUP BY `playerfirstname`,`playerlastname` 
 HAVING COUNT(*)<2 ORDER BY `year` DESC)t1 WHERE `year` = 2020; 
 ```
+![re3](https://imgur.com/kNfLzeA)
